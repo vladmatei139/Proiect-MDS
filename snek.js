@@ -2,6 +2,7 @@ var canvas,easy,medium,hard,score,Pscore;
 var snake;
 var gscale = 30;
 var food;
+var keysDisabled = false;
 
 function setup(){
 	canvas = createCanvas(900, 600);
@@ -26,6 +27,8 @@ function setup(){
 	food = new Food();
 	food.setSpawn();
 	food.spawn();
+
+	windowResized();
 
 	noLoop();
 }
@@ -100,14 +103,24 @@ function Snake(){
 }
 
 function keyPressed() {
-  if (keyCode === UP_ARROW && snake.yspeed != 1) {
-    snake.direction(0, -1);
+	if(keysDisabled == true)
+		return;
+	if (keyCode === UP_ARROW && snake.yspeed != 1) {
+    	snake.direction(0, -1);
+    	keysDisabled = true;
+    	setTimeout(function(){keysDisabled = false;}, 25);
   } else if (keyCode === DOWN_ARROW && snake.yspeed != -1) {
-    snake.direction(0, 1);
+    	snake.direction(0, 1);
+    	keysDisabled = true;
+    	setTimeout(function(){keysDisabled = false;}, 25);
   } else if (keyCode === RIGHT_ARROW && snake.xspeed != -1) {
-    snake.direction(1, 0);
+    	snake.direction(1, 0);
+    	keysDisabled = true;
+    	setTimeout(function(){keysDisabled = false;}, 25);
   } else if (keyCode === LEFT_ARROW && snake.xspeed != 1) {
-    snake.direction(-1, 0);
+    	snake.direction(-1, 0);
+    	keysDisabled = true;
+    	setTimeout(function(){keysDisabled = false;}, 25);
   }
 }
 
@@ -140,4 +153,17 @@ function randCol(){
 
 function randRow(){
 	return floor(random(canvas.height/gscale))*gscale;
+}
+
+function windowResized(){
+	easy.position((windowWidth-easy.width-30-medium.width-30-hard.width)/2,100);
+	easy.mousePressed(function(){start(5);});
+	
+	medium.position(easy.x+easy.width+30, easy.y);
+	medium.mousePressed(function(){start(10);});
+	
+	hard.position(medium.x+medium.width+30, medium.y);
+	hard.mousePressed(function(){start(20);});
+
+	pScore.position((windowWidth-30-hard.width)/2,easy.y+15);
 }

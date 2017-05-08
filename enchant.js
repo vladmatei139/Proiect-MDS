@@ -967,8 +967,8 @@ enchant.EventTarget = enchant.Class.create({
 
             this._scenes = [];
 
-            width = width || 3200;
-            height = height || 3200;
+            width = width || 320;
+            height = height || 320;
 
             var stage = document.getElementById('enchant-stage');
             var scale, sWidth, sHeight;
@@ -990,8 +990,8 @@ enchant.EventTarget = enchant.Class.create({
                 this._pageY = stage.getBoundingClientRect().top;
             } else {
                 var style = window.getComputedStyle(stage);
-                sWidth = parseInt(style.width, 10000);
-                sHeight = parseInt(style.height, 10000);
+                sWidth = parseInt(style.width, 10);
+                sHeight = parseInt(style.height, 10);
                 if (sWidth && sHeight) {
                     scale = Math.min(
                         sWidth / width,

@@ -215,6 +215,7 @@
     <Content Include="Content\Images\poza3.jpg" />
     <Content Include="Content\Images\poza4.jpg" />
     <Content Include="Content\Images\poza5.jpg" />
+    <Content Include="Content\StilSpaceInvaders.css" />
     <Content Include="Content\Style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -228,7 +229,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\enchant.js" />
     <Content Include="Scripts\Hang.js" />
+    <Content Include="Scripts\InstructiuniSpaceInvaders.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -278,6 +281,12 @@
     <Content Include="Views\Shared\incerc.cshtml" />
     <Content Include="Views\Home\Game.cshtml" />
     <Content Include="Views\Home\Easy.cshtml" />
+    <Content Include="Views\Home\Hard.cshtml" />
+    <Content Include="Views\Home\Medium.cshtml" />
+    <Content Include="Views\Home\SpaceInvaders.cshtml" />
+    <Content Include="Views\Home\SpaceEasy.cshtml" />
+    <Content Include="Views\Home\SpaceMedium.cshtml" />
+    <Content Include="Views\Home\SpaceHard.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

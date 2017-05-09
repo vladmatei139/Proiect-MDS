@@ -6,9 +6,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    //<script src="hangman.js"></script>
-    @Styles.Render("~/Content/Style.css");
-    @Scripts.Render("~/Scripts/Hang.js");
+   
+    @Styles.Render("~/Content/Style.css")
+    @Scripts.Render("~/Scripts/Hang.js")
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Hangman </title>
@@ -24,8 +24,8 @@
     <section id="s">
         <p>
             <button id="easy" type="button" class="menu" > @Html.ActionLink("Easy", "Easy", "Home")</button>
-            <button id="medium" type="button" class="menu">@Html.ActionLink("Medium","Game","Home") </button>
-            <button id="hard" tyde="button" class="menu" onclick="window.location.href='hard.html'"> HARD </button>
+            <button id="medium" type="button" class="menu">@Html.ActionLink("Medium","Medium","Home") </button>
+            <button id="hard" tyde="button" class="menu" >@Html.ActionLink("Hard","Hard","Home")  </button>
         </p>
         <br><br>
         <p>

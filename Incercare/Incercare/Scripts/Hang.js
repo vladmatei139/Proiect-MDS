@@ -115,7 +115,7 @@ function check() {
         hang++;
         x.disabled = true;
         t = document.getElementById("poza");
-        t.src = "~/Images/poza1.jpg";
+        t.src = '/Content/Images/poza'+hang+'.jpg';
         t.style.visibility = "visible";
  
     }

@@ -1,12 +1,13 @@
 ﻿
 @{
-    ViewBag.Title = "Easy";
+    ViewBag.Title = "Medium";
 }
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
-  @Styles.Render("~/Content/Style.css")
+    @Styles.Render("~/Content/Style.css")
     @Scripts.Render("~/Scripts/Hang.js")
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +18,7 @@
 
 
     <p>
-        <button id="b" type="button" onclick="dictionar()"> START </button>
+        <button id="b1" type="button" onclick="dictionar1()"> START </button>
         <button id="meniu" type="button"> @Html.ActionLink("MENU", "Game", "Home") </button>
         <button id="b3" type="button" onclick="reset()"> RESTART </button>
     </p>
@@ -25,13 +26,8 @@
     <section>
         <p id="p1"> </p> <p>
             <img id="poza" src='@Url.Content("~/Content/Images/poza1.jpg")'>
-
         </p>
-    
         <p>
-          
-            <br>
-            
             <form id="lit" onsubmit="check()">
                 <fieldset>
                     <legend>Chose a letter</legend>
@@ -74,5 +70,3 @@
     </section>
 </body>
 </html>
-
-

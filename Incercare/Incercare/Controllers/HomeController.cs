@@ -26,16 +26,47 @@ namespace Incercare.Controllers
 
             return View();
         }
-        public ActionResult Game()
+        public ActionResult Game() //Asta e pt HANGMAN 
         {
             return View();
 
         }
-        public ActionResult Easy()
+        public ActionResult Easy()//EASY PT HANGMAN . LA FEL SI MEDIUM SI HARD 
         {
             return View();
         }
 
-        
+        public ActionResult Medium()
+        {
+            return View();
+        }
+
+        public ActionResult Hard()
+        {
+            return View();
+        }
+
+        public ActionResult SpaceInvaders()
+        {
+            return View();
+        }
+
+        public ActionResult SpaceEasy()
+        {
+            return View();
+        }
+        public ActionResult SpaceMedium()
+        {
+            return View();
+        }
+        public ActionResult SpaceHard()
+        {
+            return View();
+        }
+
+
+
+
+
     }
 }

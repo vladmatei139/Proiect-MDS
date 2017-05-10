@@ -1,0 +1,15 @@
+1. Sa vad jocurile pe categorii
+2. Sa am instructiuni pentru jocuri
+3. Sa am diferite dificultati pentru jocuri
+4. Sa imi vad scorul
+5. Sa customizez infatisarea paginii
+6. Sa vad un clasament al jocurilor (cel mai jucat/cel mai putin jucat etc)
+7. Sa dau un rating pentru un joc (stelute/note)
+8. Sa pot sa dau restart jocului (daca pierd/castig sau vreau sa incep un joc nou)
+9. Sa am un meniu pentru fiecare joc
+10. Sa pot sa ma loghez cu un cont
+11. Sa pot lasa comentarii
+12. Sa am o lista de jocuri preferate
+13. Sa pot sa imi customizez caracterele din jocuri
+14.sunet la joc
+15.top 3 jocuri

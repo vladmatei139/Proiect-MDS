@@ -223,6 +223,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="Scripts\Bears.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -239,6 +240,7 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MemoryGame.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -287,6 +289,8 @@
     <Content Include="Views\Home\SpaceEasy.cshtml" />
     <Content Include="Views\Home\SpaceMedium.cshtml" />
     <Content Include="Views\Home\SpaceHard.cshtml" />
+    <Content Include="Views\Home\MemoryGame.cshtml" />
+    <Content Include="Views\Home\Bears.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

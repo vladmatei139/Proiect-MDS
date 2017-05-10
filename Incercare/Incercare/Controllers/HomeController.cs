@@ -65,6 +65,17 @@ namespace Incercare.Controllers
         }
 
 
+        public ActionResult MemoryGame()
+        {
+            return View();
+        }
+
+
+        public ActionResult Bears()
+        {
+            return View();
+        }
+
 
 
 

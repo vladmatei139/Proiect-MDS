@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Game";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    @Styles.Render("~/Content/Style.css")
+    @Scripts.Render("~/Scripts/Hang.js")
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hangman </title>
+</head>
+<body>
+    <h1>HANGMAN</h1>
+    <h1>MENU</h1>
+
+
+    <p>
+    </p>
+
+    <section id="s">
+        <p>
+            <button id="easy" type="button" class="menu" > @Html.ActionLink("Easy", "Easy", "Home")</button>
+            <button id="medium" type="button" class="menu">@Html.ActionLink("Medium","Medium","Home") </button>
+            <button id="hard" tyde="button" class="menu" >@Html.ActionLink("Hard","Hard","Home")  </button>
+        </p>
+        <br><br>
+        <p>
+            <button id="instr" type="button" class="menu" onclick="instr()"> INSTRUCTIONS </button>
+
+        </p>
+
+    </section>
+</body>
+</html>
+

@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "SpaceInvaders";
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    @Styles.Render("~/Content/StilSpaceInvaders.css")
+    @Scripts.Render("~/Scripts/InstructiuniSpaceInvaders.js")
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Space Invaders </title>
+</head>
+<body>
+    <h1>Space Invaders</h1>
+    <h1>MENU</h1>
+
+
+    <section id="s">
+        <p>
+            <button id="easy" type="button" class="menu" > @Html.ActionLink("Easy", "SpaceEasy", "Home")</button>
+            <button id="medium" type="button" class="menu"> @Html.ActionLink("Medium", "SpaceMedium", "Home") </button>
+            <button id="hard" tyde="button" class="menu" >@Html.ActionLink("Hard", "SpaceHard", "Home")  </button>
+        </p>
+        <br><br>
+        <p>
+            <button id="instr" type="button" class="menu" onclick="instr()"> INSTRUCTIONS </button>
+
+        </p>
+
+    </section>
+</body>
+</html>

@@ -21,7 +21,7 @@
     <p id="scor"> </p>
     <article>
         <script>
-           
+
     enchant();
     var game = new Game(3300, 1600);
 
@@ -31,7 +31,7 @@
 				var SpaceShip = enchant.Class.create(enchant.Sprite,{
 																	initialize: function(){
 																	enchant.Sprite.call(this, 256,256);
-																	this.image = game.assets["spaceship.png"];
+																	this.image = game.assets["/Content/Images/spaceship.png"];
 																	game.rootScene.addChild(this);
 																						   }
 																	});
@@ -40,7 +40,7 @@
 				var Bomb = enchant.Class.create(enchant.Sprite, {
 																	initialize: function(){
 																	enchant.Sprite.call(this, 128, 128);
-																	this.image = game.assets["bomb.png"];
+																	this.image = game.assets["/Content/Images/bomb.png"];
 																	this.moveTo( avion.x + 30,10);
 																	this.tl.moveBy(0, 3000, 30);
 																	game.rootScene.addChild(this);
@@ -51,7 +51,7 @@
         var Invader = enchant.Class.create(enchant.Sprite, {
 																	initialize: function(){
 																	enchant.Sprite.call(this, 207, 155);
-																	this.image = game.assets["space.png"];
+																	this.image = game.assets["/Content/Images/space.png"];
 																	this.moveTo( Math.floor(Math.random() * 3000),2000);
 																	this.tl.moveBy(0, -3900, 160);
 																	game.rootScene.addChild(this);
@@ -80,6 +80,7 @@
 			if(avioninvader.length>0) {
 										game.stop();
 										game.rootScene.removeChild(avion);
+										document.body.style.backgroundImage = 'url("/Content/Images/spatiu1.jpg")';
 
 
 

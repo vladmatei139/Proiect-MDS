@@ -95,6 +95,7 @@ function dictionar2() {
 
 function check() {
     var i;
+    alert("HELLO");
     for (i = 1; i < 27; i++) {
         var x = document.getElementById("a" + i);
         if (x.checked == true) i = 27;

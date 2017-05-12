@@ -17,6 +17,7 @@ var timeS, timeN;
 var Scor = 0;
 
 function createGame(c) {
+    alert("CREATE GAME!");
     document.getElementById("scor").innerHTML = " Scor: 0 ";
     timeS = new Date();
     var buton1 = document.getElementById("div1");

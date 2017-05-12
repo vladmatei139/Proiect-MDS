@@ -1,0 +1,108 @@
+﻿
+@{
+    ViewBag.Title = "SpaceEasy2";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    @Styles.Render("~/Content/StilSpaceInvaders.css")
+    @Scripts.Render("~/Scripts/enchant.js")
+    @Scripts.Render("~/Scripts/InstructiuniSpaceInvaders.js")
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Space Invaders </title>
+</head>
+<body id="bod">
+
+
+    <p id="scor"> </p>
+    <article>
+        <script>
+
+    enchant();
+    var game = new Game(3300, 1600);
+
+    game.preload('@Url.Content("~/Content/Images/bomb.png")', '@Url.Content("~/Content/Images/space.png")','@Url.Content("~/Content/Images/spaceship2.png")');
+    game.fps = 20;
+    game.onload = function(){
+				var SpaceShip = enchant.Class.create(enchant.Sprite,{
+																	initialize: function(){
+																	enchant.Sprite.call(this, 256,256);
+																	this.image = game.assets["/Content/Images/spaceship2.png"];
+																	game.rootScene.addChild(this);
+																						   }
+																	});
+
+
+				var Bomb = enchant.Class.create(enchant.Sprite, {
+																	initialize: function(){
+																	enchant.Sprite.call(this, 128, 128);
+																	this.image = game.assets["/Content/Images/bomb.png"];
+																	this.moveTo( avion.x + 30,10);
+																	this.tl.moveBy(0, 3000, 30);
+																	game.rootScene.addChild(this);
+																						   }
+                                                                     });
+
+
+        var Invader = enchant.Class.create(enchant.Sprite, {
+																	initialize: function(){
+																	enchant.Sprite.call(this, 207, 155);
+																	this.image = game.assets["/Content/Images/space.png"];
+																	this.moveTo( Math.floor(Math.random() * 3000),2000);
+																	this.tl.moveBy(0, -3900, 160);
+																	game.rootScene.addChild(this);
+																							}
+															});
+
+		var avion = new SpaceShip();
+        game.rootScene.tl.then(function() {
+											var invadator = new Invader();
+											}).delay(20).loop();
+
+        game.rootScene.on('touchstart', function(e){
+														avion.x = e.localX;
+														var bomba = new Bomb();
+													});
+
+
+        game.rootScene.on('touchmove', function(e){
+												avion.x = e.localX;
+													});
+
+        var scor = 0;
+        game.rootScene.on('enterframe', function(){
+            var hits = Bomb.intersect(Invader);
+			var avioninvader= SpaceShip.intersect(Invader);
+			if(avioninvader.length>0) {
+										game.stop();
+										game.rootScene.removeChild(avion);
+										document.body.style.backgroundImage = 'url("/Content/Images/spatiu1.jpg")';
+
+
+
+                                                }
+            for(var i = 0, len = hits.length; i < len; i++){
+                game.rootScene.removeChild(hits[i][0]);
+                game.rootScene.removeChild(hits[i][1]);
+                scor ++;
+				document.getElementById("scor").innerHTML="SCOR: "+scor+" .";
+            }
+                                        });
+
+
+    };
+
+    game.start();
+        </script>
+    </article>
+</body>
+</html>
+
+
+
+
+

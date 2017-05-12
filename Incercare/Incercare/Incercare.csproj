@@ -291,6 +291,15 @@
     <Content Include="Views\Home\SpaceHard.cshtml" />
     <Content Include="Views\Home\MemoryGame.cshtml" />
     <Content Include="Views\Home\Bears.cshtml" />
+    <Content Include="Views\Home\CustomSpaceEasy.cshtml" />
+    <Content Include="Views\Home\CustomSpaceMedium.cshtml" />
+    <Content Include="Views\Home\CustomSpaceHard.cshtml" />
+    <Content Include="Views\Home\SpaceEasy1.cshtml" />
+    <Content Include="Views\Home\SpaceEasy2.cshtml" />
+    <Content Include="Views\Home\SpaceMedium1.cshtml" />
+    <Content Include="Views\Home\SpaceMedium2.cshtml" />
+    <Content Include="Views\Home\SpaceHard1.cshtml" />
+    <Content Include="Views\Home\SpaceHard2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -76,6 +76,49 @@ namespace Incercare.Controllers
             return View();
         }
 
+        public ActionResult CustomSpaceEasy()
+        {
+            return View();
+        }
+        public ActionResult CustomSpaceMedium()
+        {
+            return View();
+        }
+        public ActionResult CustomSpaceHard()
+        {
+            return View();
+        }
+
+        public ActionResult SpaceEasy1()
+        {
+            return View();
+        }
+
+        public ActionResult SpaceEasy2()
+        {
+            return View();
+        }
+
+        public ActionResult SpaceMedium1()
+        {
+            return View();
+        }
+
+        public ActionResult SpaceMedium2()
+        {
+            return View();
+        }
+
+        public ActionResult SpaceHard1()
+        {
+            return View();
+        }
+        public ActionResult SpaceHard2()
+        {
+            return View();
+        }
+
+
 
 
 

@@ -6,6 +6,12 @@
 
 }
 
+#scor{
+	text-align:right;
+	font-size:30px;
+	color:cornflowerblue;
+}
+
 h2 {
 	color:hotpink;
 	text-align:center;

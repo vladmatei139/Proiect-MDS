@@ -3,7 +3,7 @@ var ghicite = 0;
 var hang = 0;
 function dictionar() {
 
-    alert("HANGAMANA");
+    alert("HANGAA");
     var dictionary = new Array("CAT", "DOG", "MONKEY", "DOLPHIN", "SNAKE", "COOL", "HOT", "COLD", "DAY", "NIGHT", "MATH", "ROCK", "HORSE", "KID", "HOUSE", "DOOR", "APPLE", "RED", "GREEN");
     var i = Math.floor(Math.random() * dictionary.length);
     cuv = dictionary[i];

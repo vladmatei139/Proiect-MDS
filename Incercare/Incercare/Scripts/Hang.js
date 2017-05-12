@@ -1,9 +1,10 @@
 ﻿var cuv;
 var ghicite = 0;
 var hang = 0;
+var scor = 0;
 function dictionar() {
 
-    alert("HANGAAm");
+    document.getElementById("scor").innerHTML = "SCOR: " + scor;
     var dictionary = new Array("CAT", "DOG", "MONKEY", "DOLPHIN", "SNAKE", "COOL", "HOT", "COLD", "DAY", "NIGHT", "MATH", "ROCK", "HORSE", "KID", "HOUSE", "DOOR", "APPLE", "RED", "GREEN");
     var i = Math.floor(Math.random() * dictionary.length);
     cuv = dictionary[i];
@@ -33,7 +34,7 @@ function dictionar() {
 }
 
 function dictionar1() {
-
+    document.getElementById("scor").innerHTML = "SCOR: " + scor;
     var dictionary = new Array("WINDOW", "BLANKET", "GLASSES", "SCRISSORS", "WOMAN", "KILOMETER", "COLLEGE", "UNIVERSITY", "CURTAINS", "REFRIGERATOR", "SOCKS", "SHIRT", "SKIRT");
     var i = Math.floor(Math.random() * dictionary.length);
     cuv = dictionary[i];
@@ -64,7 +65,7 @@ function dictionar1() {
 }
 
 function dictionar2() {
-
+    document.getElementById("scor").innerHTML = "SCOR: " + scor;
     var dictionary = new Array("MATHEMATICS", "INFORMATICS", "COMPUTER", "SUITCASE", "MYSTERIOUS", "RELATIONSHIP", "REMARKABLE", "SATELITES", "ARRANGEMENT", "CONSTANTLY");
     var i = Math.floor(Math.random() * dictionary.length);
     cuv = dictionary[i];
@@ -96,7 +97,9 @@ function dictionar2() {
 
 function check() {
     var i;
-    alert("HELLO");
+ 
+    document.getElementById("scor").innerHTML = "SCOR: " + scor ;
+   
     for (i = 1; i < 27; i++) {
         var x = document.getElementById("a" + i);
         if (x.checked == true) i = 27;
@@ -107,6 +110,9 @@ function check() {
         if (x.value == cuv[i]) {
             z = 1;
             ghicite++;
+            scor++;
+            scor++;
+            document.getElementById("scor").innerHTML = "SCOR: " + scor ;
             y = document.getElementById("h" + i).innerHTML = "\u00A0\u00A0" + cuv[i];
             x.disabled = true;
 
@@ -123,6 +129,8 @@ function check() {
     }
     if (ghicite < cuv.length && hang == 5) {
         alert("u lost");
+        scor = 0;
+        document.getElementById("scor").innerHTML = "SCOR: " + scor;
         document.getElementById("buton").disabled = true;
         for (i = 0; i < cuv.length; i++) {
             document.getElementById("h" + i).innerHTML = "\u00A0\u00A0" + cuv[i];
@@ -130,6 +138,8 @@ function check() {
     }
     if (ghicite == cuv.length - 1 && hang < 5) {
         alert("u won");
+        
+        document.getElementById("scor").innerHTML = "SCOR: " + scor ;
         document.getElementById("buton").disabled = true;
     }
 }

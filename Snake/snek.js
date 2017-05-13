@@ -1,15 +1,21 @@
-var canvas,easy,medium,hard,score,Pscore;
+var canvas,easy,medium,hard,score,Pscore,p,instr;
+var alb,rosu,verde,albastru,multi,sunet;
 var snake;
 var gscale = 30;
 var food;
+var col = 0;
 var keysDisabled = false;
+var paused = false;
 
 function setup(){
 	canvas = createCanvas(900, 600);
-	easy = createButton('easy');
-	medium = createButton('medium');
-	hard = createButton('hard');
+	easy = createButton('Easy');
+	easy.id('easy');
+	medium = createButton('Medium');
+	hard = createButton('Hard');
 	pScore = createElement('h1','Score: 0');
+	instr = createElement('p','Sageti: miscati sarpele Space: meniu');
+	instr.id('instructiuni');
 	score = 0;
 
 	easy.position((windowWidth-easy.width-30-medium.width-30-hard.width)/2,100);
@@ -48,6 +54,7 @@ function start(x){
 	easy.remove();
 	medium.remove();
 	hard.remove();
+	if(paused == false)
 	loop();
 }
 
@@ -69,14 +76,22 @@ function Snake(){
 	}
 
 	this.show = function(){
-		fill(255);
+		if(col == 0)
+			fill(255, 255, 255);
+		if(col == 1)
+			fill(255, 0, 0);
+		if(col == 2)
+			fill(0, 255, 0);
+		if(col == 3)
+			fill(0, 0, 255);
+		if(col == 4)
+			fill(floor(random(255)),floor(random(255)),floor(random(255)));
 		if(this.x>=canvas.width) this.x = 0;
 		if(this.y>=canvas.height) this.y = 0;
 		if(this.x<0) this.x = canvas.width - gscale;
 		if(this.y<0) this.y = canvas.height - gscale;
 		for(var i = 0; i < this.size; i++)
 			rect(this.tail[i].x,this.tail[i].y,gscale,gscale);
-		fill(200);
 		rect(this.x,this.y,gscale,gscale);
 	}
 
@@ -122,6 +137,13 @@ function keyPressed() {
     	keysDisabled = true;
     	setTimeout(function(){keysDisabled = false;}, 25);
   }
+  	if (keyCode == 32 && paused == false){
+  		pause();
+
+  	}
+  	else if (keyCode == 32 && paused == true){
+  		unpause();
+  	}
 }
 
 function Food(){
@@ -145,6 +167,42 @@ function Food(){
 		fill(floor(random(255)),100,floor(random(255)));
 		rect(this.x,this.y,gscale,gscale);
 	}
+}
+
+function pause(){
+	paused = true;
+	p = createElement('p','PAUSED');
+	p.id('pauza');
+	alb = createButton('Alb');
+	alb.position(300,200);
+	alb.mousePressed(function(){col = 0;});
+	rosu = createButton('Rosu');
+	rosu.position(300,250);
+	rosu.mousePressed(function(){col = 1;});
+	verde = createButton('Verde');
+	verde.position(300,300);
+	verde.mousePressed(function(){col = 2;});
+	albastru = createButton('Albastru');
+	albastru.position(300,350);
+	albastru.mousePressed(function(){col = 3;});
+	multi = createButton('Multicolor');
+	multi.position(300,400);
+	multi.mousePressed(function(){col = 4;});
+	noLoop();	
+}
+
+function unpause(){
+	var but = document.getElementById('easy');
+	if(but != null)
+		return;
+	paused = false;
+	p.remove();
+	alb.remove();
+	rosu.remove();
+	verde.remove();
+	albastru.remove();
+	multi.remove();
+	loop();
 }
 
 function randCol(){

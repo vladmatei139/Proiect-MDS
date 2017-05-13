@@ -7,7 +7,21 @@ body{
 
 	margin: 0;
 
-	background-color: #333333;
+	background-color: #ffffff;
+}
+
+#pauza{
+    font-size: 40px;
+    color: red;
+    position: absolute;
+    left: 47%; top: 43%; width:200px; height:100px;
+}
+
+#instructiuni{
+    font-size: 24px;
+    color: black;
+    position: absolute;
+    left: 5%; top: 5%; width:20%; height:20%;
 }
 
 canvas{
@@ -21,4 +35,14 @@ canvas{
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+@media screen and (max-width:1270px) and (min-width:0px){
+    
+    #instructiuni{
+    font-size: 0px;
+    color: black;
+    position: absolute;
+    left: 5%; top: 5%; width:20%; height:20%;
+}
 }

@@ -24,6 +24,8 @@ var N = 0, NR;
 var start = false;
 var menu = false;
 var apasat = false;
+var caracter = false;
+var chara = 0;
 
 window.onload = function () {
     game = new Game(240, 300);
@@ -83,9 +85,33 @@ window.onload = function () {
         background.image = game.assets['@Url.Content("~/Content/Images/im.jpg")'];
 
         game.rootScene.addChild(background);
-        game.rootScene.addChild(Menu);
+            game.rootScene.addChild(Menu);
 
-        if (start == false) {
+        if (caracter == false)
+        {
+            game.rootScene.addChild(b1);
+            game.rootScene.addChild(b2);
+
+            b1.addEventListener("touchstart", function () {
+
+                caracter = true;
+                chara = 1;
+                game.rootScene.removeChild(b1);
+                game.rootScene.removeChild(b2);
+                game.onload();
+            });
+
+            b2.addEventListener("touchstart", function () {
+
+                caracter = true;
+                chara = 2;
+                game.rootScene.removeChild(b1);
+                game.rootScene.removeChild(b2);
+                game.onload();
+            });
+        }
+
+        if (start == false && caracter == true) {
 
             game.rootScene.addChild(easy);
             game.rootScene.addChild(medium);

@@ -16,6 +16,14 @@
 else
 {
     <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+            @Html.ActionLink("Custom", "Index", "Home")
+            <div class="dropdown-content">
+                <a> Red</a>
+                <a>Blue </a>
+                <a>Pink</a>
+            </div>
+        </li>
         <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
         <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
     </ul>

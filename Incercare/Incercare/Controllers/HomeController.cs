@@ -133,7 +133,15 @@ namespace Incercare.Controllers
             return View();
         }
 
+        public ActionResult Snake()
+        {
+            return View();
+        }
 
+        public ActionResult Flappy()
+        {
+            return View();
+        }
 
 
 

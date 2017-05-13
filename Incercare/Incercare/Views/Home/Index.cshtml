@@ -1,26 +1,29 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-<br >
+<br>
 
-<h1 >ALL THE GAMES</h1>
-   <div>
-       <a href='@Url.Action( "Game", "Home")'>
-           <img src="~/Content/Images/SPANZURAT.png" height="350" width="350" />
-       </a>                                
+<h1>ALL THE GAMES</h1>
+<div>
+    <a href='@Url.Action( "Game", "Home")'>
+        <img src="~/Content/Images/SPANZURAT.png" height="350" width="350" />
+    </a>
 
-       <a href='@Url.Action( "Bears", "Home")'>
-            <img  src="~/Content/Images/URS.png" height="350" width="350">
-       </a>
-       <a href='@Url.Action( "MemoryGame", "Home")'>
-           <img src="~/Content/Images/MEMO.png" height="350" width="350">
-        </a>
-        <br>
+    <a href='@Url.Action( "Bears", "Home")'>
+        <img src="~/Content/Images/URS.png" height="350" width="350">
+    </a>
+    <a href='@Url.Action( "MemoryGame", "Home")'>
+        <img src="~/Content/Images/MEMO.png" height="350" width="350">
+    </a>
+    <br>
+    <a href='@Url.Action( "Flappy", "Home")'>
         <img src="~/Content/Images/FLAP.png" height="350" width="350">
+    </a>
 
-
-        <a href='@Url.Action( "SpaceInvaders", "Home")'>
-               <img src="~/Content/Images/INVADEZ.png" height="350" width="350">
-        </a>
+    <a href='@Url.Action( "SpaceInvaders", "Home")'>
+        <img src="~/Content/Images/INVADEZ.png" height="350" width="350">
+    </a>
+    <a href='@Url.Action( "Snake", "Home")'>
         <img src="~/Content/Images/SNEK.png" height="350" width="350">
+    </a>
 </div>

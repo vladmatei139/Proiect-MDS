@@ -118,6 +118,21 @@ namespace Incercare.Controllers
             return View();
         }
 
+        public ActionResult Action()
+        {
+            return View();
+        }
+
+        public ActionResult MemStra()
+        {
+            return View();
+        }
+
+        public ActionResult Arcade()
+        {
+            return View();
+        }
+
 
 
 

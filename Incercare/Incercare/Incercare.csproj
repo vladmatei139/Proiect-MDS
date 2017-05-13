@@ -210,6 +210,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\dropdown.css" />
     <Content Include="Content\Images\poza1.jpg" />
     <Content Include="Content\Images\poza2.jpg" />
     <Content Include="Content\Images\poza3.jpg" />
@@ -301,6 +302,9 @@
     <Content Include="Views\Home\SpaceMedium2.cshtml" />
     <Content Include="Views\Home\SpaceHard1.cshtml" />
     <Content Include="Views\Home\SpaceHard2.cshtml" />
+    <Content Include="Views\Home\Action.cshtml" />
+    <Content Include="Views\Home\MemStra.cshtml" />
+    <Content Include="Views\Home\Arcade.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

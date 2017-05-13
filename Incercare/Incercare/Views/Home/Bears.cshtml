@@ -30,7 +30,10 @@ window.onload = function () {
     game = new Game(240, 300);
     game.fps = 24;
     game.preload('@Url.Content("~/Content/Images/b1.png")','@Url.Content("~/Content/Images/b2.png")','@Url.Content("~/Content/Images/chara1.png")','@Url.Content("~/Content/Images/chara2.png")', '@Url.Content("~/Content/Images/im.jpg")', '@Url.Content("~/Content/Images/heart1.png")');
-
+    game.preload('@Url.Content("~/Content/Music/bear.mp3")');
+    game.preload('@Url.Content("~/Content/Music/bears.mp3")');
+    game.sound = game.assets["/Content/Music/bear.mp3"];
+    game.assets["/Content/Music/bears.mp3"].play();
 
 
     var easy = new enchant.Label();
@@ -237,8 +240,10 @@ window.onload = function () {
             game.rootScene.addEventListener('touchstart', function (e) {
                 for (var i = 0; i < 5; i++)
                     if (bear[i].stay == true)
-                        if (bear[i].x < e.localX && e.localX < bear[i].x + 32 && bear[i].y < e.localY && e.localY < bear[i].y + 32)
+                        if (bear[i].x < e.localX && e.localX < bear[i].x + 32 && bear[i].y < e.localY && e.localY < bear[i].y + 32) {
                             bear[i].stay = false;
+                            game.sound.play();
+                        }
             });
         var restart, resume;
         Menu.addEventListener('touchstart', function () {

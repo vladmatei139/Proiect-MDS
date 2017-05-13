@@ -215,6 +215,7 @@
     <Content Include="Content\Images\poza3.jpg" />
     <Content Include="Content\Images\poza4.jpg" />
     <Content Include="Content\Images\poza5.jpg" />
+    <Content Include="Content\Music\hangman.mp3" />
     <Content Include="Content\StilSpaceInvaders.css" />
     <Content Include="Content\Style.css" />
     <Content Include="favicon.ico" />

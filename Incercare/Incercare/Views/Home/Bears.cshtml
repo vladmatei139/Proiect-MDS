@@ -24,7 +24,6 @@ var N = 0, NR;
 var start = false;
 var menu = false;
 var apasat = false;
-var caracter = false;
 var chara = 0;
 
 window.onload = function () {
@@ -32,19 +31,7 @@ window.onload = function () {
     game.fps = 24;
     game.preload('@Url.Content("~/Content/Images/b1.png")','@Url.Content("~/Content/Images/b2.png")','@Url.Content("~/Content/Images/chara1.png")','@Url.Content("~/Content/Images/chara2.png")', '@Url.Content("~/Content/Images/im.jpg")', '@Url.Content("~/Content/Images/heart1.png")');
 
-    var b1 = new Sprite(32, 32);
-    b1.image = game.assets['@Url.Content("~/Content/Images/b1.png")'];
-    b1.x = 40;
-    b1.y = 120;
-    b1.width = 35;
-    b1.height = 35;
 
-    var b2 = new Sprite(32, 32);
-    b2.image = game.assets['@Url.Content("~/Content/Images/b2.png")'];
-    b2.x = 100;
-    b2.y = 120;
-    b2.width = 35;
-    b2.height = 35;
 
     var easy = new enchant.Label();
     easy.text = "Easy ";
@@ -87,56 +74,126 @@ window.onload = function () {
         game.rootScene.addChild(background);
             game.rootScene.addChild(Menu);
 
-        if (caracter == false)
-        {
-            game.rootScene.addChild(b1);
-            game.rootScene.addChild(b2);
-
-            b1.addEventListener("touchstart", function () {
-
-                caracter = true;
-                chara = 1;
-                game.rootScene.removeChild(b1);
-                game.rootScene.removeChild(b2);
-                game.onload();
-            });
-
-            b2.addEventListener("touchstart", function () {
-
-                caracter = true;
-                chara = 2;
-                game.rootScene.removeChild(b1);
-                game.rootScene.removeChild(b2);
-                game.onload();
-            });
-        }
-
-        if (start == false && caracter == true) {
+        if (start == false ) {
 
             game.rootScene.addChild(easy);
             game.rootScene.addChild(medium);
             game.rootScene.addChild(hard);
 
             easy.addEventListener("touchstart", function () {
-                NR = 64; start = true;
-                game.rootScene.removeChild(easy);
-                game.rootScene.removeChild(medium);
-                game.rootScene.removeChild(hard);
-                game.onload();
+                    game.rootScene.removeChild(easy);
+                    game.rootScene.removeChild(medium);
+                    game.rootScene.removeChild(hard);
+                    var b1 = new Sprite(32, 32);
+                    b1.image = game.assets['@Url.Content("~/Content/Images/b1.png")'];
+                    b1.x = 40;
+                    b1.y = 110;
+                    b1.width = 32;
+                    b1.height = 32;
+
+                    var b2 = new Sprite(32, 32);
+                    b2.image = game.assets['@Url.Content("~/Content/Images/b2.png")'];
+                    b2.x = 100;
+                    b2.y = 110;
+                    b2.width = 32;
+                    b2.height = 32;
+                    game.rootScene.addChild(b1);
+                    game.rootScene.addChild(b2);
+
+                    b1.addEventListener("touchstart", function () {
+
+                        chara = 1;
+                        game.rootScene.removeChild(b1);
+                        game.rootScene.removeChild(b2);
+                        NR = 64; start = true;
+                        game.onload();
+                    });
+
+                    b2.addEventListener("touchstart", function () {
+
+                        chara = 2;
+                        game.rootScene.removeChild(b1);
+                        game.rootScene.removeChild(b2);
+                        NR = 64; start = true;
+                        game.onload();
+                    });
+
             });
             medium.addEventListener("touchstart", function () {
-                NR = 37; start = true;
                 game.rootScene.removeChild(easy);
                 game.rootScene.removeChild(medium);
                 game.rootScene.removeChild(hard);
-                game.onload();
+                    var b1 = new Sprite(32, 32);
+                    b1.image = game.assets['@Url.Content("~/Content/Images/b1.png")'];
+                    b1.x = 40;
+                    b1.y = 110;
+                    b1.width = 32;
+                    b1.height = 32;
+
+                    var b2 = new Sprite(32, 32);
+                    b2.image = game.assets['@Url.Content("~/Content/Images/b2.png")'];
+                    b2.x = 100;
+                    b2.y = 110;
+                    b2.width = 32;
+                    b2.height = 32;
+                    game.rootScene.addChild(b1);
+                    game.rootScene.addChild(b2);
+
+                    b1.addEventListener("touchstart", function () {
+
+                        chara = 1;
+                        game.rootScene.removeChild(b1);
+                        game.rootScene.removeChild(b2);
+                        NR = 37; start = true;
+                        game.onload();
+                    });
+
+                    b2.addEventListener("touchstart", function () {
+
+                        chara = 2;
+                        game.rootScene.removeChild(b1);
+                        game.rootScene.removeChild(b2);
+                        NR = 37; start = true;
+                        game.onload();
+                    });
             });
             hard.addEventListener("touchstart", function () {
-                NR = 17; start = true;
                 game.rootScene.removeChild(easy);
                 game.rootScene.removeChild(medium);
                 game.rootScene.removeChild(hard);
-                game.onload();
+                    var b1 = new Sprite(32, 32);
+                    b1.image = game.assets['@Url.Content("~/Content/Images/b1.png")'];
+                    b1.x = 40;
+                    b1.y = 110;
+                    b1.width = 32;
+                    b1.height = 32;
+
+                    var b2 = new Sprite(32, 32);
+                    b2.image = game.assets['@Url.Content("~/Content/Images/b2.png")'];
+                    b2.x = 100;
+                    b2.y = 110;
+                    b2.width = 32;
+                    b2.height = 32;
+                    game.rootScene.addChild(b1);
+                    game.rootScene.addChild(b2);
+
+                    b1.addEventListener("touchstart", function () {
+
+                        chara = 1;
+                        game.rootScene.removeChild(b1);
+                        game.rootScene.removeChild(b2);
+                        NR = 17; start = true;
+                        game.onload();
+                    });
+
+                    b2.addEventListener("touchstart", function () {
+
+                        chara = 2;
+                        game.rootScene.removeChild(b1);
+                        game.rootScene.removeChild(b2);
+                        NR = 17; start = true;
+                        game.onload();
+                    });
             });
 
         }
@@ -151,8 +208,10 @@ window.onload = function () {
             bear[i].height = 32;
             bear[i].stay = false;
 
-
-            bear[i].image = game.assets['@Url.Content("~/Content/Images/chara2.png")'];
+            if(chara == 1)
+                bear[i].image = game.assets['@Url.Content("~/Content/Images/chara1.png")'];
+            else
+                bear[i].image = game.assets['@Url.Content("~/Content/Images/chara2.png")'];
             bear[i].frame = 1;
 
             if (start == true && menu == false) {

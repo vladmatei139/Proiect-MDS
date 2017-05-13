@@ -263,8 +263,22 @@ window.onload = function () {
             resume.x = 150;
             resume.y = 120;
 
+            var instr = new enchant.Label();
+            instr.text = "Instructions";       
+            instr.font = "18px 'Arial'";
+            instr.x = 80;
+            instr.y = 160;
+
+            var instructions1 = new enchant.Label();
+            var instructions2 = new enchant.Label();
+            var instructions3 = new enchant.Label();
+
             game.rootScene.addChild(restart);
             game.rootScene.addChild(resume);
+            game.rootScene.addChild(instr);
+            game.rootScene.addChild(instructions1);
+            game.rootScene.addChild(instructions2);
+            game.rootScene.addChild(instructions3);
 
             if (menu == true) {
                 restart.addEventListener("touchstart", function () {
@@ -273,8 +287,30 @@ window.onload = function () {
                 resume.addEventListener("touchstart", function () {
                     game.rootScene.removeChild(restart);
                     game.rootScene.removeChild(resume);
+                    game.rootScene.removeChild(instr);
+                    game.rootScene.removeChild(instructions1);
+                    game.rootScene.removeChild(instructions2);
+                    game.rootScene.removeChild(instructions3);
                     menu = false;
                 });
+                instr.addEventListener("touchstart", function ()
+                {                       
+                    instructions1.text = "click on the bears to make them walk.";
+                    instructions1.font = "12px 'Arial'";
+                    instructions1.x = 0;
+                    instructions1.y = 200;
+                    game.rootScene.addChild(instructions1);
+                    instructions2.text = "all of the bears have to walk on the same";
+                    instructions2.font = "12px 'Arial'";
+                    instructions2.x = 0;
+                    instructions2.y = 210;
+                    game.rootScene.addChild(instructions2);
+                    instructions3.text = "time to get some points.";
+                    instructions3.font = "12px 'Arial'";
+                    instructions3.x = 0;
+                    instructions3.y = 220;
+                    game.rootScene.addChild(instructions3);
+                })
 
             }
         });

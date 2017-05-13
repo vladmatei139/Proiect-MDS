@@ -15,7 +15,7 @@
 <body>
     <article>
         <script>
-                              
+
 
 enchant();
 var bear = [];
@@ -28,7 +28,21 @@ var apasat = false;
 window.onload = function () {
     game = new Game(240, 300);
     game.fps = 24;
-    game.preload('@Url.Content("~/Content/Images/chara1.gif")', '@Url.Content("~/Content/Images/im.jpg")', '@Url.Content("~/Content/Images/heart1.png")');
+    game.preload('@Url.Content("~/Content/Images/b1.png")','@Url.Content("~/Content/Images/b2.png")','@Url.Content("~/Content/Images/chara1.png")','@Url.Content("~/Content/Images/chara2.png")', '@Url.Content("~/Content/Images/im.jpg")', '@Url.Content("~/Content/Images/heart1.png")');
+
+    var b1 = new Sprite(32, 32);
+    b1.image = game.assets['@Url.Content("~/Content/Images/b1.png")'];
+    b1.x = 40;
+    b1.y = 120;
+    b1.width = 35;
+    b1.height = 35;
+
+    var b2 = new Sprite(32, 32);
+    b2.image = game.assets['@Url.Content("~/Content/Images/b2.png")'];
+    b2.x = 100;
+    b2.y = 120;
+    b2.width = 35;
+    b2.height = 35;
 
     var easy = new enchant.Label();
     easy.text = "Easy ";
@@ -112,7 +126,7 @@ window.onload = function () {
             bear[i].stay = false;
 
 
-            bear[i].image = game.assets['@Url.Content("~/Content/Images/chara1.gif")'];
+            bear[i].image = game.assets['@Url.Content("~/Content/Images/chara2.png")'];
             bear[i].frame = 1;
 
             if (start == true && menu == false) {
@@ -124,7 +138,7 @@ window.onload = function () {
                             this.x += 1;
                         else
                             this.x = 0;
-                        this.frame = this.age % 2 + 6;
+                        this.frame = this.age % 10 + 6;
 
                         var a = Math.round(Math.random() * 100);
                         if (a % NR == 0)
@@ -165,11 +179,9 @@ window.onload = function () {
 
             if (menu == true) {
                 restart.addEventListener("touchstart", function () {
-                    alert("restart");
                     window.location.reload();
                 });
                 resume.addEventListener("touchstart", function () {
-                    alert("resume");
                     game.rootScene.removeChild(restart);
                     game.rootScene.removeChild(resume);
                     menu = false;

@@ -1,4 +1,6 @@
-﻿enchant();
+﻿alert("A");
+               
+enchant();
 var bear = [];
 var heart = [];
 var N = 0, NR;
@@ -8,9 +10,8 @@ var apasat = false;
 
 window.onload = function () {
     game = new Game(240, 300);
-    game.fps = 24;
-    game.preload(['chara1.gif', 'im.jpg', 'heart1.png']);
-
+    game.fps = 24;                                             
+    game.preload('@Url.Content("~/Content/Images/chara1.gif")', '@Url.Content("~/Content/Images/im.jpg")', '@Url.Content("~/Content/Images/heart1.png")');
 
     var easy = new enchant.Label();
     easy.text = "Easy ";
@@ -225,3 +226,4 @@ window.onload = function () {
     }
     game.start();
 }
+

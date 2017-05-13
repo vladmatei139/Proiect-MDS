@@ -30,10 +30,7 @@ window.onload = function () {
     game = new Game(240, 300);
     game.fps = 24;
     game.preload('@Url.Content("~/Content/Images/b1.png")','@Url.Content("~/Content/Images/b2.png")','@Url.Content("~/Content/Images/chara1.png")','@Url.Content("~/Content/Images/chara2.png")', '@Url.Content("~/Content/Images/im.jpg")', '@Url.Content("~/Content/Images/heart1.png")');
-    game.preload('@Url.Content("~/Content/Music/bear.mp3")');
-    game.preload('@Url.Content("~/Content/Music/bears.mp3")');
-    game.sound = game.assets["/Content/Music/bear.mp3"];
-    game.assets["/Content/Music/bears.mp3"].play();
+    game.preload('@Url.Content("~/Content/Music/bear-mor.mp3")','@Url.Content("~/Content/Music/bears.mp3")');
 
 
     var easy = new enchant.Label();
@@ -70,6 +67,8 @@ window.onload = function () {
     Menu.y = 260;
 
     game.onload = function () {
+        game.sound = game.assets["/Content/Music/bear-mor.mp3"];
+        game.assets["/Content/Music/bears.mp3"].play();
         background = new Sprite(240, 300);
         background.x = background.y = 0;
         background.image = game.assets['@Url.Content("~/Content/Images/im.jpg")'];

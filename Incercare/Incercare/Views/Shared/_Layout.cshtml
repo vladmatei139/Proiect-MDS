@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MAXICLIP</title>
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/dropdown.css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
@@ -24,6 +25,15 @@
           
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li class="dropdown">
+                       @Html.ActionLink("Categories", "Index", "Home")
+                        <div class="dropdown-content">
+                            <a >@Html.ActionLink("Action", "Action", "Home")</a>
+                            <a> @Html.ActionLink("Memory and Strategy", "MemStra", "Home")</a>
+                            <a >@Html.ActionLink("Arcade", "Arcade", "Home")</a>
+                        </div>
+
+                    </li>
                    
                  
                 </ul>

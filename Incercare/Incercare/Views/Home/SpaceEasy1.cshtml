@@ -27,7 +27,10 @@
     var game = new Game(3300, 1600);
 
     game.preload('@Url.Content("~/Content/Images/bomb.png")', '@Url.Content("~/Content/Images/space.png")','@Url.Content("~/Content/Images/spaceship1.png")');
-    game.fps = 20;
+            game.preload('@Url.Content("~/Content/Music/shoot.mp3")');
+            game.preload('@Url.Content("~/Content/Music/spacemusic.mp3")');
+
+            game.fps = 20;
     game.onload = function(){
 				var SpaceShip = enchant.Class.create(enchant.Sprite,{
 																	initialize: function(){
@@ -37,7 +40,8 @@
 																						   }
 																	});
 
-
+				game.sound = game.assets["/Content/Music/shoot.mp3"];
+				game.assets["/Content/Music/spacemusic.mp3"].play();
 				var Bomb = enchant.Class.create(enchant.Sprite, {
 																	initialize: function(){
 																	enchant.Sprite.call(this, 128, 128);
@@ -67,6 +71,7 @@
         game.rootScene.on('touchstart', function(e){
 														avion.x = e.localX;
 														var bomba = new Bomb();
+														game.sound.play();
 													});
 
 

@@ -234,6 +234,7 @@
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\enchant.js" />
+    <Content Include="Scripts\flap.js" />
     <Content Include="Scripts\Hang.js" />
     <Content Include="Scripts\InstructiuniSpaceInvaders.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -311,6 +312,7 @@
     <Content Include="Views\Home\MemStra.cshtml" />
     <Content Include="Views\Home\Arcade.cshtml" />
     <Content Include="Views\Home\Snake.cshtml" />
+    <Content Include="Views\Home\Flappy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

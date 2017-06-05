@@ -2,29 +2,44 @@
 @{
     ViewBag.Title = "Home Page";
 }
+<style>
+    .inima
+    {
+        position:absolute;
+    }
 
+</style>
 
 
 <h1>ALL THE GAMES</h1>
 <div>
+    <img class="inima" src="~/Content/Images/nolike.png" height="30" width="30" onclick="place(this)"/>
     <a href='@Url.Action( "Game", "Home")'>
         <img src="~/Content/Images/SPANZURAT.png" height="350" width="350" />
     </a>
 
+    <img class="inima" src="~/Content/Images/nolike.png" height="30" width="30" onclick="place(this)"/>
     <a href='@Url.Action( "Bears", "Home")'>
         <img src="~/Content/Images/URS.png" height="350" width="350">
     </a>
+
+    <img class="inima" src="~/Content/Images/nolike.png" height="30" width="30" onclick="place(this)"/>
     <a href='@Url.Action( "MemoryGame", "Home")'>
         <img src="~/Content/Images/MEMO.png" height="350" width="350">
     </a>
     <br>
+
+    <img class="inima" src="~/Content/Images/nolike.png" height="30" width="30" onclick="place(this)"/>
     <a href='@Url.Action( "Flappy", "Home")'>
         <img src="~/Content/Images/FLAP.png" height="350" width="350">
     </a>
 
+    <img class="inima" src="~/Content/Images/nolike.png" height="30" width="30" onclick="place(this)"/>
     <a href='@Url.Action( "SpaceInvaders", "Home")'>
         <img src="~/Content/Images/INVADEZ.png" height="350" width="350">
     </a>
+
+    <img class="inima" src="~/Content/Images/nolike.png" height="30" width="30" onclick="place(this)"/>
     <a href='@Url.Action( "Snake", "Home")'>
         <img src="~/Content/Images/SNEK.png" height="350" width="350">
     </a>
@@ -39,3 +54,17 @@
         <a href="javascript:document.getElementById('logoutForm').submit()">Logout</a>
     }
 }    
+
+<script>
+
+    function place(img)
+    {
+         alert(User.Identity.Name);
+        //if (img.src == '/Content/Images/nolike.png')
+            img.src = '/Content/Images/like.png';
+        //else
+         //   img.src = '/Content/Images/nolike.png'; 
+    }
+         
+
+</script>

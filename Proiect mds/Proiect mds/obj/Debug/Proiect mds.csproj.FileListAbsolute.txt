@@ -100,3 +100,54 @@ C:\Users\Alexandra-Andreea\Documents\GitHub\Login-Page-MVC\Proiect mds\Proiect m
 C:\Users\Alexandra-Andreea\Documents\GitHub\Login-Page-MVC\Proiect mds\Proiect mds\obj\Debug\Proiect mds.csprojResolveAssemblyReference.cache
 C:\Users\Alexandra-Andreea\Documents\GitHub\Login-Page-MVC\Proiect mds\Proiect mds\obj\Debug\Proiect mds.dll
 C:\Users\Alexandra-Andreea\Documents\GitHub\Login-Page-MVC\Proiect mds\Proiect mds\obj\Debug\Proiect mds.pdb
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\csc.exe
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\csc.exe.config
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\csc.rsp
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\csi.exe
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\csi.rsp
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\System.AppContext.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\vbc.exe
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\vbc.exe.config
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\vbc.rsp
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\VBCSCompiler.exe
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\Proiect mds.dll.config
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\Proiect mds.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\Proiect mds.pdb
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\EntityFramework.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\EntityFramework.SqlServer.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\System.Web.Helpers.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\System.Web.Mvc.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\System.Web.Razor.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\System.Web.Webpages.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\System.Web.Webpages.Razor.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\EntityFramework.xml
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\EntityFramework.SqlServer.xml
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\System.Web.Razor.xml
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\System.Web.Webpages.xml
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\System.Web.Webpages.Razor.xml
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\System.Web.Helpers.xml
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\bin\System.Web.Mvc.xml
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\obj\Debug\Proiect mds.csprojResolveAssemblyReference.cache
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\obj\Debug\Proiect mds.dll
+C:\Users\Alexandra-Andreea\Documents\GitHub\Proiect-MDS\Proiect mds\Proiect mds\obj\Debug\Proiect mds.pdb

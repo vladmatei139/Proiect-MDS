@@ -11,123 +11,40 @@
 </style>
 
 
-
 <h1>ALL THE GAMES</h1>
-<div>             
-    
-
-       <a href='@Url.Action("Spanzurat", "User", new { email = User.Identity.Name })'>
-   
-        @if (Request.IsAuthenticated)
-    {
-          if (Proiect_mds.Controllers.UserController.likesSpanzurat(User.Identity.Name) == false)
-                {
-                     <img class="inima" src="~/Content/Images/nolike.png" height="30" width="30"/>
-             }
-          else
-            {
-            <img class="inima" src="~/Content/Images/like.png" height="30" width="30"/>
-            }    
-     }
+<div>                                                                                        
+    <a href='@Url.Action("Spanzurat", "User", new { email = User.Identity.Name })'>
+        <img class="inima" src="~/Content/Images/nolike.png" height="30" width="30" />
     </a>
     <a href='@Url.Action( "Game", "Home")'>
         <img src="~/Content/Images/SPANZURAT.png" height="350" width="350" />
     </a>
 
-    <a href='@Url.Action("Ursi", "User", new { email = User.Identity.Name })'>
-
-        @if (Request.IsAuthenticated)
-        {
-            if (Proiect_mds.Controllers.UserController.likesUrsi(User.Identity.Name) == false)
-            {
-                <img class="inima" src="~/Content/Images/nolike.png" height="30" width="30" />
-            }
-            else
-            {
-                <img class="inima" src="~/Content/Images/like.png" height="30" width="30" />
-            }
-        }
-    </a>
+    <img class="inima" src="~/Content/Images/nolike.png" height="30" width="30" onclick="place(this)"/>
     <a href='@Url.Action( "Bears", "Home")'>
         <img src="~/Content/Images/URS.png" height="350" width="350">
     </a>
 
+    <img class="inima" src="~/Content/Images/nolike.png" height="30" width="30" onclick="place(this)"/>
+    <a href='@Url.Action( "MemoryGame", "Home")'>
+        <img src="~/Content/Images/MEMO.png" height="350" width="350">
+    </a>
+    <br>
 
-    <a href='@Url.Action("Memo", "User", new { email = User.Identity.Name })'>
-
-        @if (Request.IsAuthenticated)
-        {
-            if (Proiect_mds.Controllers.UserController.likesMemo(User.Identity.Name) == false)
-            {
-                <img class="inima" src="~/Content/Images/nolike.png" height="30" width="30" />
-            }
-            else
-            {
-                <img class="inima" src="~/Content/Images/like.png" height="30" width="30" />
-            }
-        }
+    <img class="inima" src="~/Content/Images/nolike.png" height="30" width="30" onclick="place(this)"/>
+    <a href='@Url.Action( "Flappy", "Home")'>
+        <img src="~/Content/Images/FLAP.png" height="350" width="350">
     </a>
 
-     <a href='@Url.Action( "MemoryGame", "Home")'>
-          <img src="~/Content/Images/MEMO.png" height="350" width="350">
-     </a>
-        <br>
-
-
-    <a href='@Url.Action("Flap", "User", new { email = User.Identity.Name })'>
-        
-        @if (Request.IsAuthenticated)
-    {
-        if (Proiect_mds.Controllers.UserController.likesFlap(User.Identity.Name) == false)
-        {
-            <img class="inima" src="~/Content/Images/nolike.png" height="30" width="30" />
-        }
-        else
-        {
-            <img class="inima" src="~/Content/Images/like.png" height="30" width="30" />
-        }
-    }
-
+    <img class="inima" src="~/Content/Images/nolike.png" height="30" width="30" onclick="place(this)"/>
+    <a href='@Url.Action( "SpaceInvaders", "Home")'>
+        <img src="~/Content/Images/INVADEZ.png" height="350" width="350">
     </a>
-        <a href='@Url.Action( "Flappy", "Home")'>
-            <img src="~/Content/Images/FLAP.png" height="350" width="350">
-        </a>
 
-
-    <a href='@Url.Action("Invadez", "User", new { email = User.Identity.Name })'>
-        @if (Request.IsAuthenticated)
-        {
-            if (Proiect_mds.Controllers.UserController.likesInvadez(User.Identity.Name) == false)
-            {
-                <img class="inima" src="~/Content/Images/nolike.png" height="30" width="30" />
-            }
-            else
-            {
-                <img class="inima" src="~/Content/Images/like.png" height="30" width="30" />
-            }
-        }
-
-     </a>
-        <a href='@Url.Action( "SpaceInvaders", "Home")'>
-            <img src="~/Content/Images/INVADEZ.png" height="350" width="350">
-        </a>
-
-    <a href='@Url.Action("Snek", "User", new { email = User.Identity.Name })'>
-        @if (Request.IsAuthenticated)
-        {
-            if (Proiect_mds.Controllers.UserController.likesSnek(User.Identity.Name) == false)
-            {
-                <img class="inima" src="~/Content/Images/nolike.png" height="30" width="30" />
-            }
-            else
-            {
-                <img class="inima" src="~/Content/Images/like.png" height="30" width="30" />
-            }
-        }
+    <img class="inima" src="~/Content/Images/nolike.png" height="30" width="30" onclick="place(this)"/>
+    <a href='@Url.Action( "Snake", "Home")'>
+        <img src="~/Content/Images/SNEK.png" height="350" width="350">
     </a>
-        <a href='@Url.Action( "Snake", "Home")'>
-            <img src="~/Content/Images/SNEK.png" height="350" width="350">
-        </a>
 </div>
 
 <br /> <br /> <br />
@@ -148,8 +65,12 @@
 
     function place(img)
     {
-                                                     
-        img.src = '/Content/Images/like.png';    
+     
+            //alert(<%=Request.IsAu);
+        //if (img.src == '/Content/Images/nolike.png')
+            img.src = '/Content/Images/like.png';
+        //else
+         //   img.src = '/Content/Images/nolike.png'; 
     }
          
 

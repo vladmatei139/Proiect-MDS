@@ -7,6 +7,12 @@
     <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Spanzurat" Type="Int32" />
+    <Property Name="Memo" Type="Int32" />
+    <Property Name="Ursi" Type="Int32" />
+    <Property Name="Flap" Type="Int32" />
+    <Property Name="Invadez" Type="Int32" />
+    <Property Name="Snek" Type="Int32" />
   </EntityType>
   <EntityContainer Name="DBUsersEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Users" EntityType="Self.User" />

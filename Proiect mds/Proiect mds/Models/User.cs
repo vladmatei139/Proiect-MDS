@@ -17,6 +17,11 @@ namespace Proiect_mds.Models
         public int UserID { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public int Spanzurat { get; set; }
+        public Nullable<int> Spanzurat { get; set; }
+        public Nullable<int> Memo { get; set; }
+        public Nullable<int> Ursi { get; set; }
+        public Nullable<int> Flap { get; set; }
+        public Nullable<int> Invadez { get; set; }
+        public Nullable<int> Snek { get; set; }
     }
 }

@@ -4,6 +4,12 @@
     <EntitySetMapping Name="Users">
       <EntityTypeMapping TypeName="DBUsersModel.User">
         <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Snek" ColumnName="Snek" />
+          <ScalarProperty Name="Invadez" ColumnName="Invadez" />
+          <ScalarProperty Name="Flap" ColumnName="Flap" />
+          <ScalarProperty Name="Ursi" ColumnName="Ursi" />
+          <ScalarProperty Name="Memo" ColumnName="Memo" />
+          <ScalarProperty Name="Spanzurat" ColumnName="Spanzurat" />
           <ScalarProperty Name="UserID" ColumnName="UserID" />
           <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="Password" ColumnName="Password" />

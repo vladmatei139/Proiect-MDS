@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Proiect_mds.Models;
 using System.Web.Security;
+using System.Data.Entity;
 
 namespace Proiect_mds.Controllers
 {
@@ -133,19 +134,23 @@ namespace Proiect_mds.Controllers
             }
         }
 
-        [NonAction] 
-        public void Spanzurat()   
+        public ActionResult Spanzurat(string email)
         {
             using (DBUsersEntities db = new DBUsersEntities())
             {
-                var email = @HttpContext.User.Identity.Name;
-                var v = db.Users.Where(a => a.Email == email).FirstOrDefault();
-                v.Spanzurat = 1; 
-                              
-                db.SaveChanges();
-                
+                User v = db.Users.FirstOrDefault(a => a.Email == email);
+
+                if (v != null)
+                {
+                    v.Spanzurat = 1;
+                    db.Entry(v).State = EntityState.Modified;
+                    db.SaveChanges();
+                }
+                return RedirectToAction("Index", "Home");
+
             }
         }
+
     }
 
 }

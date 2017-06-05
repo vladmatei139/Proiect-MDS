@@ -13,8 +13,10 @@
 
 <h1>ALL THE GAMES</h1>
 <div>                                                                                        
-    <img class="inima" src="~/Content/Images/nolike.png" height="30" width="30" onclick='@Url.Action("Spanzurat", "UserController")'/>
-    <a href='@Url.Action( "Game", "Home")'>  
+    <a href='@Url.Action("Spanzurat", "User", new { email = User.Identity.Name })'>
+        <img class="inima" src="~/Content/Images/nolike.png" height="30" width="30" />
+    </a>
+    <a href='@Url.Action( "Game", "Home")'>
         <img src="~/Content/Images/SPANZURAT.png" height="350" width="350" />
     </a>
 

@@ -7,6 +7,12 @@
     <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="Password" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Spanzurat" Type="int" />
+    <Property Name="Memo" Type="int" />
+    <Property Name="Ursi" Type="int" />
+    <Property Name="Flap" Type="int" />
+    <Property Name="Invadez" Type="int" />
+    <Property Name="Snek" Type="int" />
   </EntityType>
   <EntityContainer Name="DBUsersModelStoreContainer">
     <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />

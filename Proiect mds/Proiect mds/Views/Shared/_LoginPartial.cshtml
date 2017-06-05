@@ -1,5 +1,4 @@
-﻿
-@if (Request.IsAuthenticated)
+﻿@if (Request.IsAuthenticated)
 {
     using (Html.BeginForm("Logout", "User", FormMethod.Post, new { id = "logoutForm" }))
     {
@@ -21,7 +20,7 @@
                 <a href="javascript:document.getElementById('logoutForm').submit()">Logout</a>
             </li>
         </ul>
-    }     
+    }
 }
 else
 {
@@ -44,11 +43,11 @@ else
     var color1 = document.getElementById("color1");
     var color2 = document.getElementById("color2");
     var color3 = document.getElementById("color3");
-    color1.addEventListener("click", function () { color("#00293c","#f1f3ce"); });
-    color2.addEventListener("click", function () { color("#73605b","#d09683"); });
-    color3.addEventListener("click", function () { color("#063852","#e6df44"); });
+    color1.addEventListener("click", function () { color("#00293c", "#f1f3ce"); });
+    color2.addEventListener("click", function () { color("#73605b", "#d09683"); });
+    color3.addEventListener("click", function () { color("#063852", "#e6df44"); });
 
-    function color(x,y) {
+    function color(x, y) {
         var a = document.getElementsByClassName("navbar navbar-inverse navbar-fixed-top");
         for (var i = 0; i < a.length; i++) {
             a[i].style.backgroundColor = x;

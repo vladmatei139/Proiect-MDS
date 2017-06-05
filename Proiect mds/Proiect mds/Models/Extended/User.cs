@@ -22,6 +22,6 @@ namespace Proiect_mds.Models
         [Required(AllowEmptyStrings = false, ErrorMessage = "Password required")]
         [DataType(DataType.Password)]
         [MinLength(6, ErrorMessage ="Password too short")]
-        public string Password { get; set; }
+        public string Password { get; set; }       
     }
 }

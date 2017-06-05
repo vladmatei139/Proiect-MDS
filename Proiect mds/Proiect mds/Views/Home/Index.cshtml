@@ -12,9 +12,9 @@
 
 
 <h1>ALL THE GAMES</h1>
-<div>
-    <img class="inima" src="~/Content/Images/nolike.png" height="30" width="30" onclick="place(this)"/>
-    <a href='@Url.Action( "Game", "Home")'>
+<div>                                                                                           
+    <img class="inima" src="~/Content/Images/nolike.png" height="30" width="30" onclick='@Url.Action("Spanzurat", "User")'/>
+    <a href='@Url.Action( "Game", "Home")'>  
         <img src="~/Content/Images/SPANZURAT.png" height="350" width="350" />
     </a>
 
@@ -51,15 +51,20 @@
 {
     using (Html.BeginForm("Logout", "User", FormMethod.Post, new { id = "logoutForm" }))
     {
-        <a href="javascript:document.getElementById('logoutForm').submit()">Logout</a>
+        <a href="javascript:document.getElementById('logoutForm').submit()">Logout</a>    
+
     }
+
 }    
+
+
 
 <script>
 
     function place(img)
     {
-         alert(User.Identity.Name);
+     
+            //alert(<%=Request.IsAu);
         //if (img.src == '/Content/Images/nolike.png')
             img.src = '/Content/Images/like.png';
         //else

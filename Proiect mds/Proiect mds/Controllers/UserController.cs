@@ -132,6 +132,20 @@ namespace Proiect_mds.Controllers
                 return v == null ? false : true;
             }
         }
+
+        [NonAction] 
+        public void Spanzurat()   
+        {
+            using (DBUsersEntities db = new DBUsersEntities())
+            {
+                var email = @HttpContext.User.Identity.Name;
+                var v = db.Users.Where(a => a.Email == email).FirstOrDefault();
+                v.Spanzurat = 1; 
+                              
+                db.SaveChanges();
+                
+            }
+        }
     }
 
 }

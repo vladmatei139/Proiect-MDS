@@ -14,6 +14,10 @@ namespace Proiect_mds.Controllers
         {
             return View();
         }
+        public ActionResult Profil()
+        {
+            return View();
+        }
         public ActionResult Game() //Asta e pt HANGMAN 
         {
             return View();

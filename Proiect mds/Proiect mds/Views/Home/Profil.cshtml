@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "Profil";
+}
+
+<h2>Profil</h2>
+
+     <h3>Jocuri favorite</h3>
+<ul>
+
+        @if (Request.IsAuthenticated)
+        {
+            if (Proiect_mds.Controllers.UserController.likesSpanzurat(User.Identity.Name) == true)
+            {
+                <li> Spanzuratoarea </li>
+            }  
+        }  
+
+    @if (Request.IsAuthenticated)
+    {
+        if (Proiect_mds.Controllers.UserController.likesUrsi(User.Identity.Name) == true)
+        {
+            <li> Ursuleti </li>
+        }
+    }
+
+
+    @if (Request.IsAuthenticated)
+    {
+        if (Proiect_mds.Controllers.UserController.likesFlap(User.Identity.Name) == true)
+        {
+            <li> Flappy Bird </li>
+        }
+    }
+
+
+    @if (Request.IsAuthenticated)
+    {
+        if (Proiect_mds.Controllers.UserController.likesInvadez(User.Identity.Name) == true)
+        {
+            <li> Space Invaders </li>
+        }
+    }
+
+    @if (Request.IsAuthenticated)
+    {
+        if (Proiect_mds.Controllers.UserController.likesMemo(User.Identity.Name) == true)
+        {
+            <li> Memory Game </li>
+        }
+    }
+
+    @if (Request.IsAuthenticated)
+    {
+        if (Proiect_mds.Controllers.UserController.likesSnek(User.Identity.Name) == true)
+        {
+            <li> Snake </li>
+        }
+    }
+
+
+    
+
+
+    
+    
+
+
+</ul>

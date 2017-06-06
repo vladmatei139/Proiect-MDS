@@ -316,10 +316,8 @@ namespace Proiect_mds.Controllers
             using (DBUsersEntities db = new DBUsersEntities())
             {
                 var v = db.Users.FirstOrDefault(a => a.Email == email).Spanzurat;
-                System.Diagnostics.Debug.Print(v + " ");
                 if (v == 1)
                 {
-                    System.Diagnostics.Debug.Print(v + " ");
                     return true;
                 }
                 return false;
@@ -462,7 +460,18 @@ namespace Proiect_mds.Controllers
             }
         }
 
-
+        static public string Top3()
+        {
+            using (DBUsersEntities1 db = new DBUsersEntities1())
+            {
+                string result = "";
+                var v = db.Jocuris.OrderByDescending(a => a.Nr_accesari);//ForEach(a => System.Diagnostics.Debug.Print(a.Nume));
+                System.Collections.Generic.List<Jocuri> l = v.ToList();
+                l.ForEach(a => result = result + " " + a.Nume);
+                string[] vector = result.Split(' ');
+                return (vector[1] + " " + vector[2] + " " + vector[3]);
+            }
+        }
 
 
 

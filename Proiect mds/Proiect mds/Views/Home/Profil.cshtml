@@ -58,12 +58,17 @@
         }
     }
 
+    @if (Request.IsAuthenticated)
+    {
 
-    
+            <li><h3>Top 3 jocuri:</h3></li>
+            <li>@Proiect_mds.Controllers.UserController.Top3()</li>
+    }
 
 
-    
-    
+
+
+
 
 
 </ul>

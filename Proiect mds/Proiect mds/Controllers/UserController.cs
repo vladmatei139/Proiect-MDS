@@ -401,6 +401,36 @@ namespace Proiect_mds.Controllers
             }
         }
 
+/*
+        public ActionResult AccesezSpanzurat(string email)
+        {
+            using (DBUsersEntities db = new DBUsersEntities())
+            {
+                User v = db.Jocuri.FirstOrDefault(a => a.Email == email);
+
+                if (v != null)
+                {
+                    if (v.Invadez == 1)
+                    {
+                        v.Invadez = 0;
+                        db.Entry(v).State = EntityState.Modified;
+                        db.SaveChanges();
+                    }
+
+                    else
+                    {
+
+                        v.Invadez = 1;
+                        db.Entry(v).State = EntityState.Modified;
+                        db.SaveChanges();
+
+                    }
+                }
+                return RedirectToAction("Index", "Home");
+
+            }
+        }
+        */
 
 
 

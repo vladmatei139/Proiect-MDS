@@ -61,12 +61,23 @@
     @if (Request.IsAuthenticated)
     {
 
-            <li><h3>Top 3 jocuri:</h3></li>
-            <li>@Proiect_mds.Controllers.UserController.Top3()</li>
+            <h3>Top 3 jocuri</h3>
+            <li>@Proiect_mds.Controllers.JocController.Top3()</li>
     }
 
+    @if (Request.IsAuthenticated)
+    {
 
+        <h3>Cel mai popular joc</h3>
+            <li>@Proiect_mds.Controllers.JocController.Primul()</li>
+    }
 
+    @if (Request.IsAuthenticated)
+    {
+
+        <h3>Cel mai nepopular joc</h3>
+        <li>@Proiect_mds.Controllers.JocController.Ultimul()</li>
+    }
 
 
 

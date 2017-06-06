@@ -401,36 +401,67 @@ namespace Proiect_mds.Controllers
             }
         }
 
-/*
+
         public ActionResult AccesezSpanzurat(string email)
         {
-            using (DBUsersEntities db = new DBUsersEntities())
+            using (DBUsersEntities1 db = new DBUsersEntities1())
             {
-                User v = db.Jocuri.FirstOrDefault(a => a.Email == email);
-
-                if (v != null)
-                {
-                    if (v.Invadez == 1)
-                    {
-                        v.Invadez = 0;
-                        db.Entry(v).State = EntityState.Modified;
-                        db.SaveChanges();
-                    }
-
-                    else
-                    {
-
-                        v.Invadez = 1;
-                        db.Entry(v).State = EntityState.Modified;
-                        db.SaveChanges();
-
-                    }
-                }
-                return RedirectToAction("Index", "Home");
-
+                db.Jocuris.FirstOrDefault(a => a.Nume == "Spanzurat").Nr_accesari++;
+                db.SaveChanges();
+                return RedirectToAction("Game", "Home");
             }
         }
-        */
+
+        public ActionResult AccesezUrsi(string email)
+        {
+            using (DBUsersEntities1 db = new DBUsersEntities1())
+            {
+                db.Jocuris.FirstOrDefault(a => a.Nume == "Ursi").Nr_accesari++;
+                db.SaveChanges();
+                return RedirectToAction("Bears", "Home");
+            }
+        }
+
+        public ActionResult AccesezInvadez(string email)
+        {
+            using (DBUsersEntities1 db = new DBUsersEntities1())
+            {
+                db.Jocuris.FirstOrDefault(a => a.Nume == "Invadez").Nr_accesari++;
+                db.SaveChanges();
+                return RedirectToAction("SpaceInvaders", "Home");
+            }
+        }
+
+        public ActionResult AccesezFlap(string email)
+        {
+            using (DBUsersEntities1 db = new DBUsersEntities1())
+            {
+                db.Jocuris.FirstOrDefault(a => a.Nume == "Flap").Nr_accesari++;
+                db.SaveChanges();
+                return RedirectToAction("Flappy", "Home");
+            }
+        }
+
+        public ActionResult AccesezMemo(string email)
+        {
+            using (DBUsersEntities1 db = new DBUsersEntities1())
+            {
+                db.Jocuris.FirstOrDefault(a => a.Nume == "Memo").Nr_accesari++;
+                db.SaveChanges();
+                return RedirectToAction("MemoryGame", "Home");
+            }
+        }
+
+        public ActionResult AccesezSnek(string email)
+        {
+            using (DBUsersEntities1 db = new DBUsersEntities1())
+            {
+                db.Jocuris.FirstOrDefault(a => a.Nume == "Snek").Nr_accesari++;
+                db.SaveChanges();
+                return RedirectToAction("Snake", "Home");
+            }
+        }
+
 
 
 

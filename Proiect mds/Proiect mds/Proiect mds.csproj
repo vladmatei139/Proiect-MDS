@@ -109,6 +109,16 @@
     <Content Include="Content\Style.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Models\JocuriModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>JocuriModel.edmx</DependentUpon>
+      <LastGenOutput>JocuriModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\JocuriModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>JocuriModel.edmx</DependentUpon>
+      <LastGenOutput>JocuriModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Models\UsersModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>UsersModel.Context.cs</LastGenOutput>
@@ -122,6 +132,13 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <EntityDeploy Include="Models\JocuriModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>JocuriModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\JocuriModel.edmx.diagram">
+      <DependentUpon>JocuriModel.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\Bears.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -158,6 +175,24 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Extended\User.cs" />
+    <Compile Include="Models\Jocuri.cs">
+      <DependentUpon>JocuriModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\JocuriModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JocuriModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\JocuriModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JocuriModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\JocuriModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JocuriModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\User.cs">
       <DependentUpon>UsersModel.tt</DependentUpon>
     </Compile>

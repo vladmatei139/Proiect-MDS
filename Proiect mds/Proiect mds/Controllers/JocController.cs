@@ -78,7 +78,26 @@ namespace Proiect_mds.Controllers
                 System.Collections.Generic.List<Jocuri> l = v.ToList();
                 l.ForEach(a => result = result + " " + a.Nume);
                 string[] vector = result.Split(' ');
-                return (vector[1] + " " + vector[2] + " " + vector[3]);
+
+                result = "";
+                for (int i = 1; i < 4; i++)
+                    if (vector[i] == "Spanzurat")
+                        result += " Spanzuratoarea  ";
+                    else
+                        if (vector[i] == "Ursi")
+                        result += " Ursuleti  ";
+                    else
+                        if (vector[i] == "Memo")
+                        result += " Memory Game  ";
+                    else
+                        if (vector[i] == "Invadez")
+                        result += " Space Invaders  ";
+                    else
+                        if (vector[i] == "Flap")
+                        result += " Flappy Bird  ";
+                    else
+                        result += " Snake  ";
+                return result;
             }
         }
 
@@ -91,7 +110,17 @@ namespace Proiect_mds.Controllers
                 System.Collections.Generic.List<Jocuri> l = v.ToList();
                 l.ForEach(a => result = result + " " + a.Nume);
                 string[] vector = result.Split(' ');
-                return (vector[1]);
+                if (vector[1] == "Spanzurat")
+                    return " Spanzuratoarea  ";
+                 if (vector[1] == "Ursi")
+                    return " Ursuleti  ";
+                if (vector[1] == "Memo")
+                    return " Memory Game  ";
+                 if (vector[1] == "Invadez")
+                    return " Space Invaders  ";
+                if (vector[1] == "Flap")
+                    return " Flappy Bird  ";
+                return " Snake  ";  
             }
         }
 
@@ -104,7 +133,18 @@ namespace Proiect_mds.Controllers
                 System.Collections.Generic.List<Jocuri> l = v.ToList();
                 l.ForEach(a => result = result + " " + a.Nume);
                 string[] vector = result.Split(' ');
-                return (vector[6]);
+
+                if (vector[6] == "Spanzurat")
+                    return " Spanzuratoarea  ";
+                if (vector[6] == "Ursi")
+                    return " Ursuleti  ";
+                if (vector[6] == "Memo")
+                    return " Memory Game  ";
+                if (vector[6] == "Invadez")
+                    return " Space Invaders  ";
+                if (vector[6] == "Flap")
+                    return " Flappy Bird  ";
+                return " Snake  ";
             }
         }
     }

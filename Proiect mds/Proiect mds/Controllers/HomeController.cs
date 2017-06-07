@@ -132,7 +132,7 @@ namespace Proiect_mds.Controllers
 
         public ActionResult Flappy()
         {
-            return View();
+            return View("Flappy");
         }
 
     }

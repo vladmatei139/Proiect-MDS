@@ -12,7 +12,7 @@ namespace Proiect_mds.Controllers
         [Authorize]
         public ActionResult Index()
         {
-            return View();
+            return View("Index");
         }
         public ActionResult Profil()
         {
